@@ -35,7 +35,7 @@ body {
 }
 
 img.header {
-    margin-left: 76px;
+    /* margin-left: 76px; */
     width: 180px;
 }
 
@@ -78,7 +78,7 @@ img.header {
 
 .socials-section {
     align-self: flex-end;
-    margin-right: 76px;
+    /* margin-right: 76px; */
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -87,4 +87,46 @@ img.header {
 
 .fa-brands {
     font-size: 24px;
+}
+
+.fa-brands:hover {
+    color: var(--soft-magenta);
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .reg-section img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .reg-section {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        text-align: center;
+    }
+
+    .reg-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .reg-section img {
+        width: 100%;
+    }
+
+    .reg-text-section {
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    .socials-section {
+        align-self: center;
+    }
 }
